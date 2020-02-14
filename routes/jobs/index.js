@@ -90,10 +90,17 @@ router.get('/:id', (req, res) => {
 		.then((JobInfo) => {
 			console.log(JobInfo);
 
-			if (jobId === userId || req.user.role === 'admin') {
+			if (
+				JobInfo._id.toString() === userId.toString() ||
+				req.user.role === 'admin'
+			) {
 				const j = JobInfo.toString();
 
-				res.render('job/jobPage.hbs', { jobInfo: JobInfo, allowed: true });
+				res.render('job/jobPage.hbs', {
+					jobInfo: JobInfo,
+					allowed: true,
+					notOwner: jobId !== userId,
+				});
 				return;
 			}
 

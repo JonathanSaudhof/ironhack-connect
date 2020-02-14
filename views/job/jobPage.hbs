@@ -17,16 +17,17 @@
   <p style="word-wrap: break-word" class="nm-text">{{jobInfo.description}}</p>
   <div class="nm-text italic">Created by <a href="/user/{{jobInfo.author._id}}">{{jobInfo.author.profile.name}}
       {{jobInfo.author.profile.surname}} </a></div>
-  {{#if user}}
+  {{#if allowed}}
   <div class="admin">
     <a style="display: inline" href="/jobs/{{jobInfo._id}}/edit">Edit this job</a> |
     <a style="display: inline" href="/jobs/{{jobInfo._id}}/delete">Delete this job</a>
   </div>
   {{/if}}
 
-
+  {{#if notOwner}}
   <a href="mailto:{{jobInfo.author.email}}"><button id="reply-butt">Apply</button></a>
-  <button class="favorites" id="{{jobInfo.id}}">Add to favourites</button>
+  {{/if}}
+  <button class="favorites" id="{{jobInfo.id}}">Add to favorites</button>
 
 </div>
 </div>

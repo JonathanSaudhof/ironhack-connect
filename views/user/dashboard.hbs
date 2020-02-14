@@ -58,7 +58,7 @@
     {{#equal "moderator" user.role}}
     <h3>Welcome {{user.profile.name}}</h3>
 
-    <form class="form-recent" action="/jobs-search" method="GET">
+  <form class="form-recent" action="../jobs/jobs-search/queries" method="GET">
       <input type="text" placeholder="Search.." name="job">
       <button>Search</button>
     </form>
