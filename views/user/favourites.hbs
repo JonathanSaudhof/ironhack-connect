@@ -1,5 +1,6 @@
 <div class="content-wrapper">
   <h3>My Favorite Jobs</h3>
+  {{#if jobList}}
   <div class="jobs-preview">
     {{#each jobList}}
       <div class="job-preview">
@@ -13,4 +14,7 @@
       </div>
       {{/each}}
   </div>
+  {{else}}
+    <h2>No jobs saved.</h2>
+  {{/if}}
 </div>

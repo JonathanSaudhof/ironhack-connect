@@ -1,6 +1,10 @@
 <div class="content-wrapper">
   <h1>Create a new User</h1>
 
+  {{#if message}}
+  <div class="error">{{message}}</div>
+  {{/if}}
+
   <form action="/user/create" method="post">
     <input type="email" name="email" placeholder="E-Mail of the user"value="{{email}}" required>
  
@@ -9,7 +13,10 @@
       <option name="role" value="moderator">Moderator</option>
       <option name="role" value="moderator">Admin</option>    
     </select>
-    <div class="opt-in" ><input type="checkbox" name="opt" id="create-opt"><label for="create-opt">Sure ?</label></div>
+    <div class="opt-in flex-row justify-start" style="justify-content: flex-start; align-items: center;">
+      <label for="create-opt" style=" width: 10%; margin:  auto 0">Sure ?</label>
+      <input type="checkbox" name="opt" id="create-opt" style=" height: 20px; width: 20px;">
+    </div>
     <button type="submit">Create User</button>
   
   </form>

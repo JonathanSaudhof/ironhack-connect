@@ -36,6 +36,9 @@ a {
 .justify-space-between {
   justify-content: space-between; }
 
+.justify-start {
+  justify-content: flex-start; }
+
 .align-center {
   align-items: center; }
 
@@ -55,6 +58,12 @@ button,
   justify-content: center;
   align-items: center;
   box-shadow: 0 1px 2px 0 #30354c; }
+  button:hover,
+  .btn:hover {
+    cursor: pointer;
+    background-color: #32c3ff;
+    color: #30354c;
+    border-color: #32c3ff; }
 
 .btn-secondary {
   background-color: #32c3ff;
@@ -177,31 +186,70 @@ main {
       border: 2px solid #c8c8c8;
       border-radius: 0.2rem; }
 
-.profile {
+.profile,
+.job-profile {
   width: 100%; }
-  .profile .profile-head {
+  .profile .item#portfolio-link,
+  .job-profile .item#portfolio-link {
+    background-color: transparent;
+    box-shadow: unset; }
+  .profile .profile-head,
+  .profile .job-profile-head,
+  .job-profile .profile-head,
+  .job-profile .job-profile-head {
     display: flex;
     align-items: flex-start;
     width: 100%; }
-    .profile .profile-head img {
+    .profile .profile-head img,
+    .profile .job-profile-head img,
+    .job-profile .profile-head img,
+    .job-profile .job-profile-head img {
       display: flex;
       flex: 1 1 40%;
       max-width: 150px;
       height: auto;
       border-radius: 50%;
       border: 1px solid #c8c8c8; }
-    .profile .profile-head .profile-intro {
+      .profile .profile-head img#job-profile-image,
+      .profile .job-profile-head img#job-profile-image,
+      .job-profile .profile-head img#job-profile-image,
+      .job-profile .job-profile-head img#job-profile-image {
+        display: flex;
+        border-radius: 0;
+        flex-grow: 1;
+        height: 100%;
+        width: 100%; }
+    .profile .profile-head .job-profile-intro,
+    .profile .job-profile-head .job-profile-intro,
+    .job-profile .profile-head .job-profile-intro,
+    .job-profile .job-profile-head .job-profile-intro {
+      display: flex;
+      height: 100%;
+      margin: 0;
+      flex-direction: column;
+      padding: 0.2rem;
+      padding-left: 1rem;
+      flex: 1 1 60%;
+      background-color: #eeeeef; }
+    .profile .profile-head .profile-intro,
+    .profile .job-profile-head .profile-intro,
+    .job-profile .profile-head .profile-intro,
+    .job-profile .job-profile-head .profile-intro {
       padding: 0.2rem;
       margin-left: 1rem;
       flex: 1 1 60%; }
-  .profile .profile-body {
+  .profile .profile-body,
+  .job-profile .profile-body {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: auto; }
     .profile .profile-body .tech-stack,
     .profile .profile-body .portfolio,
-    .profile .profile-body .cv {
+    .profile .profile-body .cv,
+    .job-profile .profile-body .tech-stack,
+    .job-profile .profile-body .portfolio,
+    .job-profile .profile-body .cv {
       background-color: #eeeeef;
       display: flex;
       flex-direction: column;
@@ -209,11 +257,17 @@ main {
       border-radius: 0.2rem; }
       .profile .profile-body .tech-stack *,
       .profile .profile-body .portfolio *,
-      .profile .profile-body .cv * {
+      .profile .profile-body .cv *,
+      .job-profile .profile-body .tech-stack *,
+      .job-profile .profile-body .portfolio *,
+      .job-profile .profile-body .cv * {
         margin: 0; }
       .profile .profile-body .tech-stack .item,
       .profile .profile-body .portfolio .item,
-      .profile .profile-body .cv .item {
+      .profile .profile-body .cv .item,
+      .job-profile .profile-body .tech-stack .item,
+      .job-profile .profile-body .portfolio .item,
+      .job-profile .profile-body .cv .item {
         display: flex;
         justify-content: left;
         align-items: baseline;
@@ -224,27 +278,45 @@ main {
         box-shadow: 0 1px 2px 0 #30354c; }
         .profile .profile-body .tech-stack .item#add,
         .profile .profile-body .portfolio .item#add,
-        .profile .profile-body .cv .item#add {
+        .profile .profile-body .cv .item#add,
+        .job-profile .profile-body .tech-stack .item#add,
+        .job-profile .profile-body .portfolio .item#add,
+        .job-profile .profile-body .cv .item#add {
           background-color: #32c3ff;
           color: white; }
           .profile .profile-body .tech-stack .item#add:hover,
           .profile .profile-body .portfolio .item#add:hover,
-          .profile .profile-body .cv .item#add:hover {
+          .profile .profile-body .cv .item#add:hover,
+          .job-profile .profile-body .tech-stack .item#add:hover,
+          .job-profile .profile-body .portfolio .item#add:hover,
+          .job-profile .profile-body .cv .item#add:hover {
             cursor: pointer; }
         .profile .profile-body .tech-stack .item #close-btn,
         .profile .profile-body .portfolio .item #close-btn,
-        .profile .profile-body .cv .item #close-btn {
+        .profile .profile-body .cv .item #close-btn,
+        .job-profile .profile-body .tech-stack .item #close-btn,
+        .job-profile .profile-body .portfolio .item #close-btn,
+        .job-profile .profile-body .cv .item #close-btn {
           height: 15px;
           width: auto;
           margin: 0 0.5rem; }
           .profile .profile-body .tech-stack .item #close-btn:hover,
           .profile .profile-body .portfolio .item #close-btn:hover,
-          .profile .profile-body .cv .item #close-btn:hover {
+          .profile .profile-body .cv .item #close-btn:hover,
+          .job-profile .profile-body .tech-stack .item #close-btn:hover,
+          .job-profile .profile-body .portfolio .item #close-btn:hover,
+          .job-profile .profile-body .cv .item #close-btn:hover {
             cursor: pointer; }
-    .profile .profile-body .tech-stack {
+    .profile .profile-body .cv .item,
+    .job-profile .profile-body .cv .item {
+      box-shadow: unset !important;
+      background-color: transparent; }
+    .profile .profile-body .tech-stack,
+    .job-profile .profile-body .tech-stack {
       flex-direction: row;
       flex-wrap: wrap; }
-      .profile .profile-body .tech-stack img.killer {
+      .profile .profile-body .tech-stack img.killer,
+      .job-profile .profile-body .tech-stack img.killer {
         height: 15px;
         width: auto;
         margin-left: 1rem; }

@@ -53,6 +53,9 @@ a {
 .justify-space-between {
   justify-content: space-between;
 }
+.justify-start{
+  justify-content: flex-start;
+}
 
 .align-center {
   align-items: center;
@@ -73,6 +76,12 @@ button,
   justify-content: center;
   align-items: center;
   box-shadow: 0 1px 2px 0 $dark-theme-color;
+  &:hover{
+    cursor: pointer;
+    background-color: $accent-theme-color;
+    color: $heading-color;
+    border-color: $accent-theme-color;
+  }
 }
 
 .btn-secondary {
@@ -218,12 +227,19 @@ main {
       border: 2px solid $medium-theme-color;
       border-radius: 0.2rem;
     }
+    
   }
 }
 
-.profile {
+.profile,
+.job-profile {
+  .item#portfolio-link{
+    background-color: transparent;
+    box-shadow: unset;
+  }
   width: 100%;
-  .profile-head {
+  .profile-head,
+  .job-profile-head {
     display: flex;
     align-items: flex-start;
     width: 100%;
@@ -234,7 +250,25 @@ main {
       height: auto;
       border-radius: 50%;
       border: 1px solid $medium-theme-color;
+      &#job-profile-image {
+        display: flex;
+        border-radius: 0;
+        flex-grow: 1;
+        height: 100%;
+        width: 100%;
+      }
     }
+    .job-profile-intro {
+      display: flex;
+      height: 100%;
+      margin: 0;
+      flex-direction: column;
+      padding: 0.2rem;
+      padding-left: 1rem;
+      flex: 1 1 60%;
+      background-color: $light-theme-color;
+    }
+
     .profile-intro {
       padding: 0.2rem;
       margin-left: 1rem;
@@ -284,6 +318,10 @@ main {
           }
         }
       }
+    }
+    .cv .item{
+      box-shadow: unset !important;
+      background-color: transparent;
     }
 
     .tech-stack {
