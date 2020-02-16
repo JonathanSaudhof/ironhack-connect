@@ -4,7 +4,7 @@ class dashboard extends Component {
     render() {
         return (
             <div>
-                
+                That is the dashbaord!
             </div>
         )
     }
