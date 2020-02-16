@@ -1,0 +1,737 @@
+[debug] [2020-02-16T12:53:54.014Z] ----------------------------------------------------------------------
+[debug] [2020-02-16T12:53:54.019Z] Command:       /home/josch/.nvm/versions/node/v12.15.0/bin/node /home/josch/.nvm/versions/node/v12.15.0/bin/firebase serve
+[debug] [2020-02-16T12:53:54.019Z] CLI Version:   7.13.0
+[debug] [2020-02-16T12:53:54.019Z] Platform:      linux
+[debug] [2020-02-16T12:53:54.019Z] Node Version:  v12.15.0
+[debug] [2020-02-16T12:53:54.020Z] Time:          Sun Feb 16 2020 13:53:54 GMT+0100 (GMT+01:00)
+[debug] [2020-02-16T12:53:54.020Z] ----------------------------------------------------------------------
+[debug] [2020-02-16T12:53:54.020Z] 
+[debug] [2020-02-16T12:53:54.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-16T12:53:54.028Z] > authorizing via signed-in user
+[debug] [2020-02-16T12:53:54.028Z] [iam] checking project ironhack-connect for permissions ["firebase.projects.get"]
+[debug] [2020-02-16T12:53:54.033Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/ironhack-connect:testIamPermissions  
+
+[debug] [2020-02-16T12:53:55.780Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-16T12:53:55.787Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/ironhack-connect  
+ 
+[debug] [2020-02-16T12:53:56.692Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect'...
+[info] 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions" for Cloud Functions...
+[debug] [2020-02-16T12:53:56.785Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:53:56.786Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:53:56.786Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:53:56.787Z] [worker-~diagnostic~-92e7d108-edd9-46bd-bf09-90e26374f9e9]: Assigning socketPath: /tmp/fire_emu_11679.sock
+[debug] [2020-02-16T12:53:56.788Z] [worker-~diagnostic~-92e7d108-edd9-46bd-bf09-90e26374f9e9]: BUSY
+[debug] [2020-02-16T12:53:57.192Z] [runtime-status] [11679] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:53:57.196Z] [runtime-status] [11679] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:53:57.198Z] [runtime-status] [11679] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:53:57.202Z] [runtime-status] [11679] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:53:57.202Z] [runtime-status] [11679] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  ReferenceError: passport is not defined
+    at Object.<anonymous> (/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js:22:2)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at Object.<anonymous> (/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:21:19)
+    at Module._compile (internal/modules/cjs/loader.js:955:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:53:57.703Z] [worker-~diagnostic~-92e7d108-edd9-46bd-bf09-90e26374f9e9]: exited
+[debug] [2020-02-16T12:53:57.704Z] [worker-~diagnostic~-92e7d108-edd9-46bd-bf09-90e26374f9e9]: FINISHED
+[debug] [2020-02-16T12:54:13.672Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js changed, reloading triggers
+[debug] [2020-02-16T12:54:14.674Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T12:54:14.688Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:54:14.688Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:54:14.688Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:54:14.689Z] [worker-~diagnostic~-5379a2c5-ed24-4c01-81c5-e2603428f621]: Assigning socketPath: /tmp/fire_emu_11711.sock
+[debug] [2020-02-16T12:54:14.689Z] [worker-~diagnostic~-5379a2c5-ed24-4c01-81c5-e2603428f621]: BUSY
+[debug] [2020-02-16T12:54:15.076Z] [runtime-status] [11711] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:54:15.083Z] [runtime-status] [11711] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:54:15.087Z] [runtime-status] [11711] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:54:15.090Z] [runtime-status] [11711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:54:15.090Z] [runtime-status] [11711] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:54:15.168Z] [worker-~diagnostic~-5379a2c5-ed24-4c01-81c5-e2603428f621]: exited
+[debug] [2020-02-16T12:54:15.169Z] [worker-~diagnostic~-5379a2c5-ed24-4c01-81c5-e2603428f621]: FINISHED
+[debug] [2020-02-16T12:55:17.768Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T12:55:18.770Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T12:55:18.789Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:55:18.790Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:55:18.790Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:55:18.790Z] [worker-~diagnostic~-94045e5c-fcec-4e11-bed7-167a309400cf]: Assigning socketPath: /tmp/fire_emu_11739.sock
+[debug] [2020-02-16T12:55:18.790Z] [worker-~diagnostic~-94045e5c-fcec-4e11-bed7-167a309400cf]: BUSY
+[debug] [2020-02-16T12:55:19.190Z] [runtime-status] [11739] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:55:19.193Z] [runtime-status] [11739] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:55:19.200Z] [runtime-status] [11739] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:55:19.204Z] [runtime-status] [11739] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:55:19.204Z] [runtime-status] [11739] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:55:19.289Z] [worker-~diagnostic~-94045e5c-fcec-4e11-bed7-167a309400cf]: exited
+[debug] [2020-02-16T12:55:19.289Z] [worker-~diagnostic~-94045e5c-fcec-4e11-bed7-167a309400cf]: FINISHED
+[debug] [2020-02-16T12:55:54.515Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T12:55:55.515Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T12:55:55.524Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:55:55.524Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:55:55.524Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:55:55.525Z] [worker-~diagnostic~-15e71fb5-fe9c-4fcd-b6a2-932467cafa4f]: Assigning socketPath: /tmp/fire_emu_11773.sock
+[debug] [2020-02-16T12:55:55.525Z] [worker-~diagnostic~-15e71fb5-fe9c-4fcd-b6a2-932467cafa4f]: BUSY
+[debug] [2020-02-16T12:55:55.843Z] [runtime-status] [11773] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:55:55.847Z] [runtime-status] [11773] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:55:55.851Z] [runtime-status] [11773] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:55:55.852Z] [runtime-status] [11773] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:55:55.855Z] [runtime-status] [11773] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:55:55.937Z] [worker-~diagnostic~-15e71fb5-fe9c-4fcd-b6a2-932467cafa4f]: exited
+[debug] [2020-02-16T12:55:55.937Z] [worker-~diagnostic~-15e71fb5-fe9c-4fcd-b6a2-932467cafa4f]: FINISHED
+[debug] [2020-02-16T12:55:57.863Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T12:55:58.864Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T12:55:58.876Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:55:58.877Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:55:58.877Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:55:58.878Z] [worker-~diagnostic~-a544b5f8-91e0-46aa-87ad-84d62df09969]: Assigning socketPath: /tmp/fire_emu_11795.sock
+[debug] [2020-02-16T12:55:58.878Z] [worker-~diagnostic~-a544b5f8-91e0-46aa-87ad-84d62df09969]: BUSY
+[debug] [2020-02-16T12:55:59.344Z] [runtime-status] [11795] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:55:59.347Z] [runtime-status] [11795] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:55:59.350Z] [runtime-status] [11795] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:55:59.352Z] [runtime-status] [11795] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:55:59.354Z] [runtime-status] [11795] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:55:59.425Z] [worker-~diagnostic~-a544b5f8-91e0-46aa-87ad-84d62df09969]: exited
+[debug] [2020-02-16T12:55:59.425Z] [worker-~diagnostic~-a544b5f8-91e0-46aa-87ad-84d62df09969]: FINISHED
+[debug] [2020-02-16T12:56:21.906Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T12:56:22.908Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T12:56:22.917Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:56:22.917Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:56:22.917Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:56:22.918Z] [worker-~diagnostic~-c37c4f5c-1358-4f34-a5f7-4378fffd02a2]: Assigning socketPath: /tmp/fire_emu_11812.sock
+[debug] [2020-02-16T12:56:22.918Z] [worker-~diagnostic~-c37c4f5c-1358-4f34-a5f7-4378fffd02a2]: BUSY
+[debug] [2020-02-16T12:56:23.285Z] [runtime-status] [11812] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:56:23.289Z] [runtime-status] [11812] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:56:23.292Z] [runtime-status] [11812] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:56:23.294Z] [runtime-status] [11812] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:56:23.296Z] [runtime-status] [11812] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:56:23.406Z] [worker-~diagnostic~-c37c4f5c-1358-4f34-a5f7-4378fffd02a2]: exited
+[debug] [2020-02-16T12:56:23.407Z] [worker-~diagnostic~-c37c4f5c-1358-4f34-a5f7-4378fffd02a2]: FINISHED
+[debug] [2020-02-16T12:56:30.375Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T12:56:31.376Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T12:56:31.387Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:56:31.387Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:56:31.387Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:56:31.388Z] [worker-~diagnostic~-4954bfcc-6946-4a6a-986e-37e493642691]: Assigning socketPath: /tmp/fire_emu_11853.sock
+[debug] [2020-02-16T12:56:31.388Z] [worker-~diagnostic~-4954bfcc-6946-4a6a-986e-37e493642691]: BUSY
+[debug] [2020-02-16T12:56:31.763Z] [runtime-status] [11853] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:56:31.771Z] [runtime-status] [11853] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:56:31.774Z] [runtime-status] [11853] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:56:31.779Z] [runtime-status] [11853] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:56:31.782Z] [runtime-status] [11853] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:56:31.857Z] [worker-~diagnostic~-4954bfcc-6946-4a6a-986e-37e493642691]: exited
+[debug] [2020-02-16T12:56:31.857Z] [worker-~diagnostic~-4954bfcc-6946-4a6a-986e-37e493642691]: FINISHED
+[debug] [2020-02-16T12:56:46.958Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T12:56:47.959Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T12:56:47.968Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:56:47.969Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:56:47.970Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:56:47.970Z] [worker-~diagnostic~-57b2ee3b-c086-4b38-ae87-882be6bcbed9]: Assigning socketPath: /tmp/fire_emu_11871.sock
+[debug] [2020-02-16T12:56:47.970Z] [worker-~diagnostic~-57b2ee3b-c086-4b38-ae87-882be6bcbed9]: BUSY
+[debug] [2020-02-16T12:56:48.314Z] [runtime-status] [11871] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:56:48.319Z] [runtime-status] [11871] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:56:48.323Z] [runtime-status] [11871] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:56:48.326Z] [runtime-status] [11871] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:56:48.329Z] [runtime-status] [11871] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:56:48.406Z] [worker-~diagnostic~-57b2ee3b-c086-4b38-ae87-882be6bcbed9]: exited
+[debug] [2020-02-16T12:56:48.406Z] [worker-~diagnostic~-57b2ee3b-c086-4b38-ae87-882be6bcbed9]: FINISHED
+[debug] [2020-02-16T12:56:52.894Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T12:56:53.894Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T12:56:53.910Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T12:56:53.910Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T12:56:53.910Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T12:56:53.910Z] [worker-~diagnostic~-0eb74e1b-b321-484d-80b1-04992164146a]: Assigning socketPath: /tmp/fire_emu_11887.sock
+[debug] [2020-02-16T12:56:53.911Z] [worker-~diagnostic~-0eb74e1b-b321-484d-80b1-04992164146a]: BUSY
+[debug] [2020-02-16T12:56:54.419Z] [runtime-status] [11887] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T12:56:54.423Z] [runtime-status] [11887] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T12:56:54.426Z] [runtime-status] [11887] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T12:56:54.426Z] [runtime-status] [11887] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T12:56:54.428Z] [runtime-status] [11887] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T12:56:54.500Z] [worker-~diagnostic~-0eb74e1b-b321-484d-80b1-04992164146a]: exited
+[debug] [2020-02-16T12:56:54.500Z] [worker-~diagnostic~-0eb74e1b-b321-484d-80b1-04992164146a]: FINISHED
+[debug] [2020-02-16T13:16:45.711Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:16:46.713Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:16:46.720Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:16:46.721Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:16:46.721Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:16:46.721Z] [worker-~diagnostic~-d7fb21bf-e94f-40ae-b2d2-43b6bd192628]: Assigning socketPath: /tmp/fire_emu_13236.sock
+[debug] [2020-02-16T13:16:46.722Z] [worker-~diagnostic~-d7fb21bf-e94f-40ae-b2d2-43b6bd192628]: BUSY
+[debug] [2020-02-16T13:16:47.298Z] [runtime-status] [13236] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:16:47.302Z] [runtime-status] [13236] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:16:47.304Z] [runtime-status] [13236] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:16:47.306Z] [runtime-status] [13236] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:16:47.307Z] [runtime-status] [13236] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:16:47.394Z] [worker-~diagnostic~-d7fb21bf-e94f-40ae-b2d2-43b6bd192628]: exited
+[debug] [2020-02-16T13:16:47.394Z] [worker-~diagnostic~-d7fb21bf-e94f-40ae-b2d2-43b6bd192628]: FINISHED
+[debug] [2020-02-16T13:20:25.937Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:20:26.938Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:20:26.947Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:20:26.947Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:20:26.947Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:20:26.948Z] [worker-~diagnostic~-aaea6033-4524-4d62-bdcf-303cd5e1fe2d]: Assigning socketPath: /tmp/fire_emu_13383.sock
+[debug] [2020-02-16T13:20:26.948Z] [worker-~diagnostic~-aaea6033-4524-4d62-bdcf-303cd5e1fe2d]: BUSY
+[debug] [2020-02-16T13:20:27.343Z] [runtime-status] [13383] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:20:27.347Z] [runtime-status] [13383] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:20:27.351Z] [runtime-status] [13383] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:20:27.354Z] [runtime-status] [13383] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:20:27.360Z] [runtime-status] [13383] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:20:27.433Z] [worker-~diagnostic~-aaea6033-4524-4d62-bdcf-303cd5e1fe2d]: exited
+[debug] [2020-02-16T13:20:27.434Z] [worker-~diagnostic~-aaea6033-4524-4d62-bdcf-303cd5e1fe2d]: FINISHED
+[debug] [2020-02-16T13:23:11.093Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:23:12.096Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:23:12.104Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:23:12.105Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:23:12.105Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:23:12.105Z] [worker-~diagnostic~-51e36b14-33a8-4d81-a916-8ec7e782c491]: Assigning socketPath: /tmp/fire_emu_13447.sock
+[debug] [2020-02-16T13:23:12.106Z] [worker-~diagnostic~-51e36b14-33a8-4d81-a916-8ec7e782c491]: BUSY
+[debug] [2020-02-16T13:23:12.415Z] [runtime-status] [13447] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:23:12.419Z] [runtime-status] [13447] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:23:12.422Z] [runtime-status] [13447] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:23:12.422Z] [runtime-status] [13447] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:23:12.422Z] [runtime-status] [13447] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:23:12.498Z] [worker-~diagnostic~-51e36b14-33a8-4d81-a916-8ec7e782c491]: exited
+[debug] [2020-02-16T13:23:12.498Z] [worker-~diagnostic~-51e36b14-33a8-4d81-a916-8ec7e782c491]: FINISHED
+[debug] [2020-02-16T13:25:30.197Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:25:31.198Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:25:31.206Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:25:31.207Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:25:31.207Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:25:31.207Z] [worker-~diagnostic~-be3b1a7e-eca2-40e3-9529-256926c5d57b]: Assigning socketPath: /tmp/fire_emu_13515.sock
+[debug] [2020-02-16T13:25:31.207Z] [worker-~diagnostic~-be3b1a7e-eca2-40e3-9529-256926c5d57b]: BUSY
+[debug] [2020-02-16T13:25:31.534Z] [runtime-status] [13515] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:25:31.537Z] [runtime-status] [13515] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:25:31.542Z] [runtime-status] [13515] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:25:31.543Z] [runtime-status] [13515] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:25:31.546Z] [runtime-status] [13515] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:25:31.620Z] [worker-~diagnostic~-be3b1a7e-eca2-40e3-9529-256926c5d57b]: exited
+[debug] [2020-02-16T13:25:31.621Z] [worker-~diagnostic~-be3b1a7e-eca2-40e3-9529-256926c5d57b]: FINISHED
+[debug] [2020-02-16T13:26:05.866Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:26:06.867Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:26:06.874Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:26:06.875Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:26:06.875Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:26:06.875Z] [worker-~diagnostic~-f75f72f0-95be-462d-ab8f-55085492b1ad]: Assigning socketPath: /tmp/fire_emu_13535.sock
+[debug] [2020-02-16T13:26:06.875Z] [worker-~diagnostic~-f75f72f0-95be-462d-ab8f-55085492b1ad]: BUSY
+[debug] [2020-02-16T13:26:07.245Z] [runtime-status] [13535] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:26:07.255Z] [runtime-status] [13535] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:26:07.262Z] [runtime-status] [13535] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:26:07.263Z] [runtime-status] [13535] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:26:07.266Z] [runtime-status] [13535] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:26:07.417Z] [worker-~diagnostic~-f75f72f0-95be-462d-ab8f-55085492b1ad]: exited
+[debug] [2020-02-16T13:26:07.417Z] [worker-~diagnostic~-f75f72f0-95be-462d-ab8f-55085492b1ad]: FINISHED
+[debug] [2020-02-16T13:29:55.438Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:29:56.440Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:29:56.452Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:29:56.453Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:29:56.453Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:29:56.453Z] [worker-~diagnostic~-4654d9e7-8270-47b4-b134-03a4c00dc323]: Assigning socketPath: /tmp/fire_emu_13783.sock
+[debug] [2020-02-16T13:29:56.453Z] [worker-~diagnostic~-4654d9e7-8270-47b4-b134-03a4c00dc323]: BUSY
+[debug] [2020-02-16T13:29:56.808Z] [runtime-status] [13783] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:29:56.812Z] [runtime-status] [13783] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:29:56.818Z] [runtime-status] [13783] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:29:56.823Z] [runtime-status] [13783] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:29:56.827Z] [runtime-status] [13783] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:29:56.913Z] [worker-~diagnostic~-4654d9e7-8270-47b4-b134-03a4c00dc323]: exited
+[debug] [2020-02-16T13:29:56.913Z] [worker-~diagnostic~-4654d9e7-8270-47b4-b134-03a4c00dc323]: FINISHED
+[debug] [2020-02-16T13:31:11.457Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:31:12.458Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:31:12.468Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:31:12.468Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:31:12.468Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:31:12.468Z] [worker-~diagnostic~-a863baf8-add2-4421-aa4e-20b1389e258d]: Assigning socketPath: /tmp/fire_emu_13815.sock
+[debug] [2020-02-16T13:31:12.468Z] [worker-~diagnostic~-a863baf8-add2-4421-aa4e-20b1389e258d]: BUSY
+[debug] [2020-02-16T13:31:12.891Z] [runtime-status] [13815] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:31:12.894Z] [runtime-status] [13815] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:31:12.898Z] [runtime-status] [13815] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:31:12.900Z] [runtime-status] [13815] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:31:12.903Z] [runtime-status] [13815] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:31:12.996Z] [worker-~diagnostic~-a863baf8-add2-4421-aa4e-20b1389e258d]: exited
+[debug] [2020-02-16T13:31:12.997Z] [worker-~diagnostic~-a863baf8-add2-4421-aa4e-20b1389e258d]: FINISHED
+[debug] [2020-02-16T13:31:37.020Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:31:38.020Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:31:38.027Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:31:38.027Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:31:38.029Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:31:38.029Z] [worker-~diagnostic~-9a2a43f8-7911-4ae2-bdc8-fc0cad537b20]: Assigning socketPath: /tmp/fire_emu_13860.sock
+[debug] [2020-02-16T13:31:38.029Z] [worker-~diagnostic~-9a2a43f8-7911-4ae2-bdc8-fc0cad537b20]: BUSY
+[debug] [2020-02-16T13:31:38.328Z] [runtime-status] [13860] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:31:38.331Z] [runtime-status] [13860] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:31:38.337Z] [runtime-status] [13860] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:31:38.337Z] [runtime-status] [13860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:31:38.338Z] [runtime-status] [13860] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:31:38.417Z] [worker-~diagnostic~-9a2a43f8-7911-4ae2-bdc8-fc0cad537b20]: exited
+[debug] [2020-02-16T13:31:38.418Z] [worker-~diagnostic~-9a2a43f8-7911-4ae2-bdc8-fc0cad537b20]: FINISHED
+[debug] [2020-02-16T13:32:02.056Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:32:03.057Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:32:03.066Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:32:03.066Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:32:03.066Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:32:03.066Z] [worker-~diagnostic~-94ca9492-1eed-4ce8-98dc-a757b32ecce2]: Assigning socketPath: /tmp/fire_emu_13884.sock
+[debug] [2020-02-16T13:32:03.066Z] [worker-~diagnostic~-94ca9492-1eed-4ce8-98dc-a757b32ecce2]: BUSY
+[debug] [2020-02-16T13:32:03.352Z] [runtime-status] [13884] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:32:03.355Z] [runtime-status] [13884] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:32:03.361Z] [runtime-status] [13884] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:32:03.362Z] [runtime-status] [13884] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:32:03.365Z] [runtime-status] [13884] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:32:03.449Z] [worker-~diagnostic~-94ca9492-1eed-4ce8-98dc-a757b32ecce2]: exited
+[debug] [2020-02-16T13:32:03.449Z] [worker-~diagnostic~-94ca9492-1eed-4ce8-98dc-a757b32ecce2]: FINISHED
+[debug] [2020-02-16T13:32:40.943Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:32:41.949Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:32:41.958Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:32:41.958Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:32:41.959Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:32:41.959Z] [worker-~diagnostic~-d4c9eb16-5b38-4387-a291-fa5378d6699d]: Assigning socketPath: /tmp/fire_emu_13903.sock
+[debug] [2020-02-16T13:32:41.959Z] [worker-~diagnostic~-d4c9eb16-5b38-4387-a291-fa5378d6699d]: BUSY
+[debug] [2020-02-16T13:32:42.276Z] [runtime-status] [13903] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:32:42.280Z] [runtime-status] [13903] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:32:42.283Z] [runtime-status] [13903] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:32:42.285Z] [runtime-status] [13903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:32:42.287Z] [runtime-status] [13903] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:32:42.364Z] [worker-~diagnostic~-d4c9eb16-5b38-4387-a291-fa5378d6699d]: exited
+[debug] [2020-02-16T13:32:42.364Z] [worker-~diagnostic~-d4c9eb16-5b38-4387-a291-fa5378d6699d]: FINISHED
+[debug] [2020-02-16T13:33:12.974Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:33:13.975Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:33:13.981Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:33:13.981Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:33:13.982Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:33:13.982Z] [worker-~diagnostic~-1b0062f6-7a8d-481b-a616-bd837411de76]: Assigning socketPath: /tmp/fire_emu_13937.sock
+[debug] [2020-02-16T13:33:13.982Z] [worker-~diagnostic~-1b0062f6-7a8d-481b-a616-bd837411de76]: BUSY
+[debug] [2020-02-16T13:33:14.432Z] [runtime-status] [13937] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:33:14.436Z] [runtime-status] [13937] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:33:14.442Z] [runtime-status] [13937] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:33:14.445Z] [runtime-status] [13937] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:33:14.447Z] [runtime-status] [13937] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:33:14.526Z] [worker-~diagnostic~-1b0062f6-7a8d-481b-a616-bd837411de76]: exited
+[debug] [2020-02-16T13:33:14.526Z] [worker-~diagnostic~-1b0062f6-7a8d-481b-a616-bd837411de76]: FINISHED
+[debug] [2020-02-16T13:34:59.508Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:35:00.509Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:35:00.519Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:35:00.519Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:35:00.519Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:35:00.520Z] [worker-~diagnostic~-039702a9-5d8e-419d-89a1-aed266cfc0fd]: Assigning socketPath: /tmp/fire_emu_14046.sock
+[debug] [2020-02-16T13:35:00.520Z] [worker-~diagnostic~-039702a9-5d8e-419d-89a1-aed266cfc0fd]: BUSY
+[debug] [2020-02-16T13:35:00.854Z] [runtime-status] [14046] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:35:00.859Z] [runtime-status] [14046] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:35:00.861Z] [runtime-status] [14046] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:35:00.864Z] [runtime-status] [14046] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:35:00.864Z] [runtime-status] [14046] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:35:00.937Z] [worker-~diagnostic~-039702a9-5d8e-419d-89a1-aed266cfc0fd]: exited
+[debug] [2020-02-16T13:35:00.937Z] [worker-~diagnostic~-039702a9-5d8e-419d-89a1-aed266cfc0fd]: FINISHED
+[debug] [2020-02-16T13:35:22.485Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:35:23.485Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:35:23.492Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:35:23.492Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:35:23.492Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:35:23.493Z] [worker-~diagnostic~-dd267f8b-61d7-42f1-aeee-150f328abc7a]: Assigning socketPath: /tmp/fire_emu_14093.sock
+[debug] [2020-02-16T13:35:23.493Z] [worker-~diagnostic~-dd267f8b-61d7-42f1-aeee-150f328abc7a]: BUSY
+[debug] [2020-02-16T13:35:23.772Z] [runtime-status] [14093] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:35:23.775Z] [runtime-status] [14093] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:35:23.779Z] [runtime-status] [14093] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:35:23.781Z] [runtime-status] [14093] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:35:23.783Z] [runtime-status] [14093] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:35:23.848Z] [worker-~diagnostic~-dd267f8b-61d7-42f1-aeee-150f328abc7a]: exited
+[debug] [2020-02-16T13:35:23.848Z] [worker-~diagnostic~-dd267f8b-61d7-42f1-aeee-150f328abc7a]: FINISHED
+[debug] [2020-02-16T13:36:06.892Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:36:07.893Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:36:07.904Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:36:07.904Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:36:07.904Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:36:07.904Z] [worker-~diagnostic~-b7615ede-9eba-451e-9f5a-a7b93319d0d6]: Assigning socketPath: /tmp/fire_emu_14134.sock
+[debug] [2020-02-16T13:36:07.904Z] [worker-~diagnostic~-b7615ede-9eba-451e-9f5a-a7b93319d0d6]: BUSY
+[debug] [2020-02-16T13:36:08.212Z] [runtime-status] [14134] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:36:08.217Z] [runtime-status] [14134] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:36:08.221Z] [runtime-status] [14134] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:36:08.224Z] [runtime-status] [14134] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:36:08.227Z] [runtime-status] [14134] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:36:08.288Z] [worker-~diagnostic~-b7615ede-9eba-451e-9f5a-a7b93319d0d6]: exited
+[debug] [2020-02-16T13:36:08.288Z] [worker-~diagnostic~-b7615ede-9eba-451e-9f5a-a7b93319d0d6]: FINISHED
+[debug] [2020-02-16T13:36:35.905Z] File /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/routes/auth/index.js changed, reloading triggers
+[debug] [2020-02-16T13:36:36.906Z] [worker-pool] Cleaned up workers for ~diagnostic~: 1 --> 0
+[debug] [2020-02-16T13:36:36.913Z] [worker-pool] addWorker(~diagnostic~)
+[debug] [2020-02-16T13:36:36.914Z] [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2020-02-16T13:36:36.914Z] [worker-pool] submitWork(triggerId=)
+[debug] [2020-02-16T13:36:36.914Z] [worker-~diagnostic~-4ce3bd54-18b3-4738-a1e9-5ea204f35189]: Assigning socketPath: /tmp/fire_emu_14172.sock
+[debug] [2020-02-16T13:36:36.915Z] [worker-~diagnostic~-4ce3bd54-18b3-4738-a1e9-5ea204f35189]: BUSY
+[debug] [2020-02-16T13:36:37.191Z] [runtime-status] [14172] Functions runtime initialized. {"cwd":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions","node_version":"12.15.0"}
+[debug] [2020-02-16T13:36:37.194Z] [runtime-status] [14172] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2020-02-16T13:36:37.199Z] [runtime-status] [14172] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.9.2","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2020-02-16T13:36:37.202Z] [runtime-status] [14172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2020-02-16T13:36:37.202Z] [runtime-status] [14172] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/node_modules/firebase-functions/lib/index.js"}
+[warn] ⚠  /home/josch/Dokumente/Programming/Ironhack/w6/ironhack-connect/functions/index.js:24
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+    ^^^
+
+SyntaxError: Unexpected identifier
+    at Module._compile (internal/modules/cjs/loader.js:891:18)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:991:10)
+    at Module.load (internal/modules/cjs/loader.js:811:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:723:14)
+    at Module.require (internal/modules/cjs/loader.js:848:19)
+    at require (internal/modules/cjs/helpers.js:74:18)
+    at /home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:719:33
+    at Generator.next (<anonymous>)
+    at fulfilled (/home/josch/.nvm/versions/node/v12.15.0/lib/node_modules/firebase-tools/lib/emulator/functionsEmulatorRuntime.js:5:58)
+    at processTicksAndRejections (internal/process/task_queues.js:94:5)
+[warn] ⚠  We were unable to load your functions code. (see above)
+[debug] [2020-02-16T13:36:37.292Z] [worker-~diagnostic~-4ce3bd54-18b3-4738-a1e9-5ea204f35189]: exited
+[debug] [2020-02-16T13:36:37.292Z] [worker-~diagnostic~-4ce3bd54-18b3-4738-a1e9-5ea204f35189]: FINISHED
