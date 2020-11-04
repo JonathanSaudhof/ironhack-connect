@@ -20,7 +20,7 @@ const jobSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User"
     },
-    image: { type: String, default: "/images/loudspeaker.png" },
+    image: { type: String, default: "public/images/dogpaw.png" },
     startsAt: Date
   },
   {
