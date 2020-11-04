@@ -9,6 +9,7 @@ mongoose.connect(process.env.MONGODB_URI, () => {
 
 // USER - Seeds
 const User = require('../models/user');
+const Job = require('../models/jobs');
 const bcrypt = require('bcrypt');
 const bcryptSalt = 10;
 
@@ -60,6 +61,7 @@ const defaultUser = [
 		password: hashPass,
 	},
 ];
+
 User.collection.drop();
 
 promises.push(
@@ -70,12 +72,61 @@ promises.push(
 
 // JOB-Seeds
 // TODO: Create the jobsSeed
-const defaultJobs = [{}];
+const defaultJobs = [
+	{
+		title: 'Junior UX/UI Designer',
+		company: 'Amazon',
+		companyUrl: 'https://amazon.com	',
+		description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`,
+		contractType: 'Full time',
+		category: 'UX/UI',
+		location: {
+			city: 'Seatle',
+			country: 'USA',
+		},
+
+		image: '/images/ux.svg',
+	},
+	{
+		title: 'Junior Data Scientist ',
+		company: 'Zalando',
+		companyUrl: 'https://zalando.de	',
+		description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`,
+		scription: 'You will be working in an awesome team.',
+		contractType: 'Full time',
+		category: 'Data',
+		location: {
+			city: 'Berlin',
+			country: 'Germany',
+		},
+
+		image: '/images/da.svg',
+	},
+	{
+		title: 'Junior Full Stack Developer',
+		company: 'Google',
+		companyUrl: 'https://google.com	',
+		description: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.`,
+		contractType: 'Full time',
+		category: 'WebDev',
+		location: {
+			city: 'Seatle',
+			country: 'USA',
+		},
+		image: '/images/wd.svg',
+	},
+];
+Job.collection.drop();
+
+promises.push(
+	Job.create(defaultJobs).then((result) => {
+		console.log(result);
+	}),
+);
 
 // Wait for all Promisses and close the connection afterwards
 
 Promise.all(promises).then((result) => {
-	User.collection.drop();
 	console.log('Seeds finished');
 	mongoose.connection.close();
 });
